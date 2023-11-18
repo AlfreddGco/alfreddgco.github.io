@@ -5,7 +5,7 @@ date:   2023-11-16 00:06:01 -0600
 categories: emprendimiento
 ---
 
-En 2022 hice 12 semanas de prácticas en Google (California) como ingeniero de software. Prácticamente estuve haciendo trabajo full-stack.
+En 2022 hice 12 semanas de prácticas en Google (California) como ingeniero de software.
 El punto es que al final del _internship_ tenía la opción de terminar la carrera y ser ingeniero de software de tiempo completo en Google. Sin embargo,
 decidí no tomar el puesto (lo explicaré en otro momento) y quedarme en México a emprender un poco con los conocimientos que tenía.
 
