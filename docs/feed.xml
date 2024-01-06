@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2023-11-30T16:18:17-06:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Alfredo G. Blog</title><subtitle>Ingeniería, ciencia, filosofía, economía, y lo que crea que pueda sernos útil.</subtitle><entry><title type="html">Getting shit done (GSD)</title><link href="http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done.html" rel="alternate" type="text/html" title="Getting shit done (GSD)" /><published>2023-11-28T10:58:00-06:00</published><updated>2023-11-28T10:58:00-06:00</updated><id>http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done</id><content type="html" xml:base="http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done.html"><![CDATA[<p>“Get shit done” es una frase que se utiliza mucho en inglés que prácticamente significa hacer o empezar algo <strong>y terminarlo</strong>.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2024-01-06T15:12:34-06:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Alfredo G. Blog</title><subtitle>Ingeniería, ciencia, filosofía, economía, y lo que crea que pueda sernos útil.</subtitle><entry><title type="html">10 Tips al Aprender RL (Aprendizaje Reforzado)</title><link href="http://localhost:4000/blog/software/2024/01/06/10-tips-al-aprender-aprendizaje-reforzado.html" rel="alternate" type="text/html" title="10 Tips al Aprender RL (Aprendizaje Reforzado)" /><published>2024-01-06T13:58:00-06:00</published><updated>2024-01-06T13:58:00-06:00</updated><id>http://localhost:4000/blog/software/2024/01/06/10-tips-al-aprender-aprendizaje-reforzado</id><content type="html" xml:base="http://localhost:4000/blog/software/2024/01/06/10-tips-al-aprender-aprendizaje-reforzado.html"><![CDATA[<p>¡Feliz año nuevo!</p>
+
+<p>Hace un par de semanas termine mi <a href="https://www.youtube.com/playlist?list=PL5gl3i8riyLdmsJ6tMy-cA6wI_T3m-rY-">serie de videos</a> donde usaba torch y gymnasium en python para entrenar un bípedo autónomo con aprendizaje reforzado y
+la arquitectura SAC (Soft Actor Critic). Honestamente casi nunca me toca programar cosas relacionadas a Machine Learning pero he estudiado y entiendo bien la teoría.
+Por lo que, en cierta forma, esta experiencia fue un aprendizaje para mi y quisiera compartir algunos tips que logré abstraer que me hubieran servido
+para lorgrar terminar el proyecto de manera más rápida y con menos trabas.</p>
+
+<p>Algunos de estos consejos funcionan si apenas estás empezando a programar unas cuántas redes neuronales mientras que otros consejos se podrían considerar
+consejos de software en general.</p>
+
+<h3 id="1--cuida-los-inputs-y-outputs-de-tu-red-neuronal">1.- Cuida los inputs y outputs de tu red neuronal</h3>
+<p>Cuidar los inputs y outputs de tu red neuronal es importante, es un paso muy sencillo pero es muy fácil de olvidar cuando estamos empezando.
+Asegurate de cuidar las dimnesiones de tus inputs y outputs, la forma en la que codificas la información, y el rango de valores que puedes tener
+tanto en input como en outputs. Dependiendo de tu función de activación de la última capa de tu red neuronal, puede ser que algunos rangos de
+valores sean imposibles para tu red neuronal darlos como resultados.</p>
+
+<p>Por poner un ejemplo, la función de activación <code class="language-plaintext highlighter-rouge">ReLU</code> no te puede dar valores negativos, por lo que si durante tu experimento estás esperando
+valores negativos en el output, nunca los vas a tener. A veces no es necesario ajustar tus funciones de activación, a veces puede bastar con hacer
+algo de regularización después de tu output. Pero entre más embebidas estén las limitantes, mejor para tu experimento.</p>
+
+<p>De la misma forma, en mi experimento, yo interpretaba los outputs (lineales) de mi red neuronal como desviaciones estándar logarítmicas,
+los cuales convertía en sólo desviaciones estándar con la función <code class="language-plaintext highlighter-rouge">torch.exp</code>, pero no sin antes limitar los valores del logaritmo con la función
+<code class="language-plaintext highlighter-rouge">torch.clamp</code> para que, al exponenciar los resultados, tener control del rango de valores que podía obtener:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">log_std</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">log_std_layer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="n">log_std</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">clamp</span><span class="p">(</span><span class="n">log_std</span><span class="p">,</span> <span class="n">LOG_STD_MIN</span><span class="p">,</span> <span class="n">LOG_STD_MAX</span><span class="p">)</span> <span class="c1"># defino valor mínimo y máximo de los logaritmos
+</span>  <span class="n">std</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="n">log_std</span><span class="p">)</span> <span class="c1"># al deshacerme del logaritmo, sé que mis valores estarán en mi rango deseado
+</span></code></pre></div></div>
+
+<h3 id="2--cuidado-con-las-redimensiones">2.- Cuidado con las redimensiones</h3>
+<p>En general, no deberías estár haciendo muchas redimensiones de datos de un lago hacia otros, si tu red neuronal está bien diseñada,
+debería de darte las dimensiones adecuadas para usarlas como están y mandarlas al agente o a donde sea necesario. Habrá excepciones a
+esta regla pero en general no deberíamos de estar haciendo redimensiones extrañas donde estamos agregando o quitando dimensiones.</p>
+
+<h3 id="3--presta-atención-a-tus-funciones-de-pérdida-loss-functions">3.- Presta atención a tus funciones de pérdida (loss functions)</h3>
+<p>Las funciones de pérdida son un punto importante y a veces engañoso por las matemáticas que pueden llegar a implicar, pero recordemos
+que nuestra red neuronal va a intentar minimizar esta función, por lo que si la función está mal definida, estaremos optimizando para
+las acciones incorrectas.</p>
+
+<h3 id="4--entiende-las-matemáticas-detrás">4.- Entiende las matemáticas detrás</h3>
+<p>Esto se relaciona con el punto anterior, puesto que si no entiendes las matemáticas detrás, será difícil averigüar si tu función de
+périda es la correcta, ya que suele ser el valor final después de realizar muchas operaciones con muchos datos, o sea, que esta función
+en varios casos se va a derivar de operaciones complejas, y es importante entender estas operaciones para validar el resultado.</p>
+
+<h3 id="5--estudia-el-problema-y-soluciones-hechas-por-otros-así-sabrás-qué-esperar">5.- Estudia el problema y soluciones hechas por otros (así sabrás qué esperar)</h3>
+<p>Este es un punto muy importante. Mucha gente intentará resolver los problemas por su propia cuenta y llegar a una solución <em>estado del arte</em>.
+Sin embargo, esta decisión muchas veces nos limita la perspectiva y nos priva de saber qué esperar de nuestro algoritmo. Durante mi experimento,
+al estudiar otras soluciones, pude dimensionar lo simple o complejo que era el problema, la cantidad de nueronas que se suelen utilizar para resolverlo,
+funciones de activación, rangos razonables para los hiperparámetros, y cuánto entrenamiento requerían las redes neuronales para llegar a un desempeño decente.
+Sin conocer todo este tipo de información de antemano, estás intentando resolver el problema casi a ciegas, y agregarte esta limitante muchas veces no te hará aprender
+más, sino que te hará tener que hacer un proceso muy repetitivo de experimentación variando hiperparámetros una y otra vez.</p>
+
+<p>En mi caso, aprendí que el agente debía de <em>empezar</em> a caminar aproximadamente a los 1000 juegos con una buena arquitectura de aprendizaje, por lo que
+cuando el proceso de aprendizaje superaba los 3000 juegos, y no se veía ningún progreso, sabía que algo estaba mal.</p>
+
+<h3 id="6--código-limpio-y-buena-arquitectura-te-ayudará-a-desarrollar-y-debuggear-mejor">6.- Código limpio y buena arquitectura te ayudará a desarrollar y debuggear mejor</h3>
+<p>El código limpio hará que te repitas menos a la hora de escribir código, por ende, hará que tengas menos código, y por consiguiente, menos bugs.
+A su vez, el código limpio de ayudará a construir una buena arquitectura en todo tu proyecto, lo que te dará más flexibilidad para debugger y probar
+nuevas cosas, sin tener que hacer cambios significativos a la estructura de tu código. Además, por arquitectura también me refiero a desarrollar
+herramientas, métricas, tests, etc. ya que a veces queremos resolver el problema con haber escrito solo unas cuantas piezas de código. Sin embargo, 
+cada vez que haya algo útil que podríamos programar, será muy conveniente hacerlo puesto que tendremos más “infraestructura” para atacar el problema.</p>
+
+<p><strong>Menos código, menos bugs; más código, más infraestructura; más infraestructura, más fácil se vuelve la resolución de problemas.</strong></p>
+
+<h3 id="7--ten-cuidado-con-operaciones-matriciales">7.- Ten cuidado con operaciones matriciales</h3>
+<p>Las operaciones matriciales pueden llegar a ser engañosas, ya que trabajamos con muchos datos y no siempre podemos estar seguros de que cada input
+se convirtió en el output correspondiente. Para ello es importante implementar tests y usar un debugger para entender lo que está pasando en aquellos
+pasos que son un poco complejos de verificar a plena vista.</p>
+
+<p>En mi caso, tenía un bucle donde una matriz no se estaba actualizando a través de cada iteración, pero como la matriz era una matriz de muchos valores,
+muchas veces no pensamos en “ver” o verificar que estas variables tengan los datos correctos y confiamos en que tienen lo que esperamos. El haber usado
+un debugger me hubiera servido para darme cuenta de que esta variable no se estaba actualizando a través de iteraciones.</p>
+
+<h3 id="8--no-solo-prestes-atención-a-las-cosas-complejas">8.- No solo prestes atención a las cosas complejas</h3>
+<p>A diferencia de la regla anterior, también es importante prestarle atención a las cosas simples. Muchas veces por estar trabajando con algoritmos y
+matemáticas complejas, y nuestro código no funciona, automáticamente asumimos que el error debe estar en las cosas complejas, pero somos seres
+humanos y también nos podemos equivocar en las cosas más simples, y puede que no lo notemos por estar buscando nuestro error en lo complejo
+una y otra vez.</p>
+
+<h3 id="9--no-gastes-tanto-tiempo-en-hiperparámetros">9.- No gastes tanto tiempo en hiperparámetros</h3>
+<p>Optimizar hiperparámetros casi nunca va a hacer que nuestro código empiece a funcionar, nos pueden dar unas cuantas mejoras pero actualizar y validar
+hiperparámetros suele tomar mucho tiempo, y muchas veces puedes tener mejores resultados por cantidad de esfuerzsos implementando más infraestructura.</p>
+
+<p>En mi caso, pasé un buen timepo intentando optimizar hiperparámetros cuando había mejores cosas en las que podía gastar mi tiempo, como programando una
+función que me ayudará a graficar resultados, o mejorando mis redes neuronales agregando encoders y regularización.</p>
+
+<h3 id="10--avanza-paso-a-paso">10.- Avanza paso a paso</h3>
+<p>Por último, avanzar paso a paso nos ayudará a cometer menos errores y notar fácilmente cuándo es que las cosas dejan de funcionar. Intenta empezar con
+la configuración más simple posible y ve escalando el problema desde ahí, porque si empiezas con una configuración compleja y las cosas no funcionan,
+tendrás muchos lugares por revisar para encontrar el problema. En general creo que esta es una buena regla para todo campo ingenieríl.</p>
+
+<hr />
+<p><br />
+<em>Pequeña nota:</em> El haber desarrollado específicamente 10 tips fue mera casualidad. No me gusta cuando los artículos forzan una lista de puntos a un número específico
+(supongo que por fines de marketing) porque algunos puntos terminan sintiéndose sobrados. Por ende, espero que cada tip se sienta igual de útil que los demás :)</p>]]></content><author><name></name></author><category term="software" /><summary type="html"><![CDATA[¡Feliz año nuevo!]]></summary></entry><entry><title type="html">Getting shit done (GSD)</title><link href="http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done.html" rel="alternate" type="text/html" title="Getting shit done (GSD)" /><published>2023-11-28T10:58:00-06:00</published><updated>2023-11-28T10:58:00-06:00</updated><id>http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done</id><content type="html" xml:base="http://localhost:4000/blog/productividad/2023/11/28/getting-shit-done.html"><![CDATA[<p>“Get shit done” es una frase que se utiliza mucho en inglés que prácticamente significa hacer o empezar algo <strong>y terminarlo</strong>.
 El anglicismo que uso para esta frase es <em>getshitdonear</em>, pero en palabras más sencillas también le llamo “terminar las cosas”.</p>
 
 <p>Creo que los humanos somos naturalmente malos terminando las cosas. ¿Cuántas veces no hemos escuchado a gente que fue al gimnasio
