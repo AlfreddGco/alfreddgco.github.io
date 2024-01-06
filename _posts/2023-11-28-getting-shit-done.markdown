@@ -65,6 +65,6 @@ sano y te va a ayudar a "terminar las cosas" desde una raíz fisiológica/neurol
 
 -----------------
 <br/>
-Dato intersante: El MIT tiene una clase llamada [Building an Entrepreneurial Venture: Advanced Tools and Techniques (GSD)](https://orbit.mit.edu/classes/building-an-entrepreneurial-venture-advanced-tools-and-techniques-gsd-15.378)
+Dato intersante: El MIT tiene una clase llamada [Building an Entrepreneurial Venture: Advanced Tools and Techniques (GSD)](https://orbit.mit.edu/classes/building-an-entrepreneurial-venture-advanced-tools-and-techniques-gsd-15.378){:target="_blank"}
 (nótese el "GSD" en el nombre) donde trabajan en aplicar técnicas de emprendimiento avanzadas de manera iterativa en tu negocio/emprendimiento.
 

@@ -7,7 +7,7 @@ categories: software
 
 ¡Feliz año nuevo!
 
-Hace un par de semanas termine mi [serie de videos](https://www.youtube.com/playlist?list=PL5gl3i8riyLdmsJ6tMy-cA6wI_T3m-rY-) donde usaba torch y gymnasium en python para entrenar un bípedo autónomo con aprendizaje reforzado y
+Hace un par de semanas termine mi [serie de videos](https://www.youtube.com/playlist?list=PL5gl3i8riyLdmsJ6tMy-cA6wI_T3m-rY-){:target="_blank"} donde usaba torch y gymnasium en python para entrenar un bípedo autónomo con aprendizaje reforzado y
 la arquitectura SAC (Soft Actor Critic). Honestamente casi nunca me toca programar cosas relacionadas a Machine Learning pero he estudiado y entiendo bien la teoría.
 Por lo que, en cierta forma, esta experiencia fue un aprendizaje para mi y quisiera compartir algunos tips que logré abstraer que me hubieran servido
 para lorgrar terminar el proyecto de manera más rápida y con menos trabas.
