@@ -21,3 +21,4 @@ Canal de twitch donde hago LiveCoding: [https://www.twitch.tv/edgecase41](https:
 
 Canal de youtube donde resubo streams: [https://www.youtube.com/@alfredo-ff](https://www.youtube.com/@alfredo-ff){:target="_blank"}
 
+Mi link de referido de Toptal: [https://toptal.com/q2a9Dy/worlds-top-talent](https://toptal.com/q2a9Dy/worlds-top-talent){:target="_blank"} 
