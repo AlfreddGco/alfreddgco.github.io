@@ -21,7 +21,7 @@
 title: Alfredo G.
 email: alfredo@fzf.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Ingeniería, ciencia, filosofía, economía, y lo que crea que pueda sernos útil.
+  Ingeniería, tecnología, economía, y lo que crea que pueda sernos útil.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alfredo.engineer" # the base hostname & protocol for your site, e.g. http://example.com
 destination: "docs/"
