@@ -15,7 +15,7 @@ En su momento mi psicólga me sugirió que escribiera un libro. Me pareció mejo
 
 ### Links
 
-Mi empresa: [FuzzyFlags](https://fuzzyflags.com){:target="_blank"}
+Mi empresa: [FuzzyFlags](https://fzf.dev){:target="_blank"}
 
 Canal de twitch donde hago LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
 

@@ -2,7 +2,7 @@ Software engineer sharing professional work and technical ideas.
 
 ### Links
 
-My company: [FuzzyFlags](https://fuzzyflags.com){:target="_blank"}
+My company: [FuzzyFlags](https://fzf.dev){:target="_blank"}
 
 Twitch channel where I do LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
 
