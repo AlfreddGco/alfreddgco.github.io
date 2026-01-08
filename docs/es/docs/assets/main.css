@@ -648,4 +648,15 @@ table td {
   color: #099;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 20px;
+}
+.language-switcher a.active {
+  font-weight: bold;
+  color: #2a7ae2;
+}
+
 /*# sourceMappingURL=main.css.map */
