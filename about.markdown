@@ -8,7 +8,7 @@ permalink: /about/
 
 I'm a Robotics Engineer with over 9 years of software development experience, passionate about tackling technical challenges at the intersection of physics, software, and hardware. At 21, I interned at Google, which launched my entrepreneurial journey. By 22, I founded [FuzzyFlags](https://fzf.dev), bootstrapping it from 2 co-founders to a team of 10 professionals.
 
-We specialize in nearshored software and infrastructure development, serving clients across Canada, USA, Mexico, and Australia. My expertise spans Web Development, Embedded Systems, and Cloud Computing.
+We specialize in nearshored software and infrastructure development, serving clients across Canada, USA, Mexico, Australia, and Saudi Arabia. My expertise spans Web Development, Embedded Systems, and Cloud Computing.
 
 Throughout my journey at FuzzyFlags, I've managed developers, led multiple international projects, and helped build a platform for a startup that secured seed funding. Currently, I'm transitioning back from management to hands-on engineering, focusing on the software energy sector with a long-term goal of impacting the nuclear fusion industry within 10-20 years.
 
