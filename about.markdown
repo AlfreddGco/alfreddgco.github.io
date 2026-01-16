@@ -4,21 +4,24 @@ title: About
 permalink: /about/
 ---
 
-Este es el blog donde comparto algunas ideas a la comunidad hispanohablante.
-Creo que los países hispanohablantes estamos en una desventaja literaria contra 
-otros países como Estados Unidos. Ya que son países muy grandes donde se 
-genera mucho contenido innovador, y tratando los temas más recientes en ciencias 
-e ingeniería aplicadas. Este es mi esfuerzo por indexar algo de información 
-valiosa a la web y comunidad de nuestra propia lengua.
+## About Me
 
-En su momento mi psicólga me sugirió que escribiera un libro. Me pareció mejor idea hacer un blog.
+I'm a Robotics Engineer with over 9 years of software development experience, passionate about tackling technical challenges at the intersection of physics, software, and hardware. At 21, I interned at Google, which launched my entrepreneurial journey. By 22, I founded [FuzzyFlags](https://fzf.dev), bootstrapping it from 2 co-founders to a team of 10 professionals.
+
+We specialize in nearshored software and infrastructure development, serving clients across Canada, USA, Mexico, and Australia. My expertise spans Web Development, Embedded Systems, and Cloud Computing.
+
+Throughout my journey at FuzzyFlags, I've managed developers, led multiple international projects, and helped build a platform for a startup that secured seed funding. Currently, I'm transitioning back from management to hands-on engineering, focusing on the software energy sector with a long-term goal of impacting the nuclear fusion industry within 10-20 years.
+
+I'm driven by curiosity and continuous learning, particularly in how computer science principles apply across domains like physics and biology. I also explore the business advantages that technology provides, educating myself in leadership, product management, strategic planning, and microeconomics.
+
+Outside of work, I enjoy rock climbing, chess, and language learning.
 
 ### Links
 
-Mi empresa: [FuzzyFlags](https://fzf.dev){:target="_blank"}
+My company: [FuzzyFlags](https://fzf.dev){:target="_blank"}
 
-Canal de twitch donde hago LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
+Twitch channel where I do LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
 
-Canal de youtube donde resubo streams: [https://www.youtube.com/@alfredo-ff](https://www.youtube.com/@alfredo-ff){:target="_blank"}
+YouTube channel where I reupload streams: [https://www.youtube.com/@alfredo-ff](https://www.youtube.com/@alfredo-ff){:target="_blank"}
 
-Mi link de referido de Toptal: [https://toptal.com/q2a9Dy/worlds-top-talent](https://toptal.com/q2a9Dy/worlds-top-talent){:target="_blank"} 
+My Toptal referral link: [https://toptal.com/q2a9Dy/worlds-top-talent](https://toptal.com/q2a9Dy/worlds-top-talent){:target="_blank"}
