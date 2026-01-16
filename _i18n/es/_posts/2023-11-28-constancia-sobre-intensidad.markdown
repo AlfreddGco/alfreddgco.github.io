@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Getting shit done (GSD)"
+title:  "Constancia sobre intensidad"
 date:   2023-11-28 10:58:00 -0600
 categories: productividad
 ---

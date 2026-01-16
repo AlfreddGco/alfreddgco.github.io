@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "¿Es el Tec de Monterrey para ti?"
+title:  "Evaluando la educación privada"
 date:   2023-11-20 18:52:00 -0600
 categories: educación
 ---

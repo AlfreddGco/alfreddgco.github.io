@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "El dinero no te da libertad"
+title:  "Tiempo vs dinero"
 date:   2023-11-17 20:37:00 -0600
 categories: finanzas
 ---
