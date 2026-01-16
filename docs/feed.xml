@@ -1,1 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alfredo.engineer/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alfredo.engineer/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-01-16T11:53:56-06:00</updated><id>https://alfredo.engineer/feed.xml</id><title type="html">Alfredo G.</title><subtitle>Ingeniería, tecnología, economía, y lo que crea que pueda sernos útil.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-01-16T12:16:44-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alfredo G.</title><subtitle>Ingeniería, tecnología, economía, y lo que crea que pueda sernos útil.</subtitle><entry><title type="html">The Next.js Myth</title><link href="http://localhost:4000/2026/01/15/the-nextjs-myth.html" rel="alternate" type="text/html" title="The Next.js Myth" /><published>2026-01-15T22:53:00-06:00</published><updated>2026-01-15T22:53:00-06:00</updated><id>http://localhost:4000/2026/01/15/the-nextjs-myth</id><content type="html" xml:base="http://localhost:4000/2026/01/15/the-nextjs-myth.html"><![CDATA[<p><a href="https://nextjs.org/">Next.js</a> is a popular web framework built on top of <a href="https://react.dev/">React</a> that provides sophisticated features for building modern and global web applications. It offers <strong>server-side rendering</strong>, <strong>static site generation</strong>, <strong>API routes</strong>, <strong>incremental static regeneration</strong>, <strong>image optimization</strong>, and more.</p>
+
+<p>This framework was built by <a href="https://vercel.com/">Vercel</a>, a company that provides hosting and deployment services for web applications. Through the Vercel platform, you can deploy your Next.js applications with ease and take advantage of one of their best features in the market: <em>edge computing</em> and good CDN services. This means that when users try to access your application, the content is delivered from servers that are geographically closer to them, resulting in faster load times and improved performance. Beyond that, you get great SEO out of the box, which is crucial for improving your website’s visibility.</p>
+
+<p>But try the following: Run Next.js’s <a href="https://nextjs.org/docs/app/guides/package-bundling#nextjs-bundle-analyzer-experimental">bundler analyzer</a> on any production app, and you’ll discover an uncomfortable truth. A simple landing page often ships <strong>500KB+ of JavaScript</strong>—before adding any business logic. Check your Network tab. Run <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>. The numbers don’t lie.</p>
+
+<p>Next.js ships a entire runtime to browsers, meaning the client side gets react runtime, next.js runtime, and also your code. Meanwhile, simpler tools like <a href="https://jekyllrb.com/">Jekyll</a> or <a href="https://htmx.org/">HTMX</a> achieve perfect Lighthouse scores with 10% of the payload.</p>
+
+<p>We can actually go through Next’s most popular features and see when they might actually be useful:</p>
+
+<ul>
+  <li>
+    <p><strong>SSR/SSG/ISR</strong>: The technical SEO trinity. But if your app is behind authentication or serves internal users, you’re shipping complexity without getting much benefit. A <a href="https://vite.dev/">Vite</a> SPA would be faster to build and debug.</p>
+  </li>
+  <li>
+    <p><strong>Edge computing</strong>: Great for global purposes. But in practice, most apps serve speciifc regional users. A simple us-east-1 webapp with CloudFlare CDN will outperform edge functions for 90% of use cases if you are targeting US users or specific regions.</p>
+  </li>
+  <li>
+    <p><strong>File-based routing</strong>: This souldn’t even be discussed but I’ve seen junior developers choose Next just because of the clear file based routing. Every modern framework has this already or can be achieved through a library or a plugin.</p>
+  </li>
+</ul>
+
+<h3 id="the-real-beneficiaries">The Real Beneficiaries</h3>
+
+<p>I don’t think Next.js is an engineering tool, I think it’s a <strong>marketing platform disguised as a framework</strong>. Marketing teams gain the most from its capabilities: edge-rendered landing pages for A/B tests, ISR for content updates without deploys, and built-in SEO for organic growth. They get to ship campaigns at scale without waiting for engineering sprints.</p>
+
+<p><strong>Engineering teams</strong> pay the price. The “great developer experience” evaporates once you debug your first hydration mismatch or trace through three layers of caching to understand why content won’t update. Vercel makes deployment simple—if you use Vercel. Self-hosting means wrestling with edge functions, middleware, and Node.js server configurations that nobody warned you about.</p>
+
+<h3 id="when-nextjs-actually-makes-sense">When Next.js Actually Makes Sense</h3>
+
+<ul>
+  <li><strong>Content-heavy marketing sites</strong> requiring frequent updates and SEO juice</li>
+  <li><strong>E-commerce platforms</strong> with global audiences and personalization needs</li>
+  <li><strong>Media companies</strong> balancing paywalls, ads, and content delivery</li>
+  <li><strong>Well-funded startups</strong> with dedicated DevOps who can manage the complexity</li>
+</ul>
+
+<h3 id="the-myth">The Myth</h3>
+
+<p>Next.js has been marketed as a general-purpose framework for a long time, but it’s mostly a <strong>specialized tool for content-driven businesses</strong>. It trades most of the engineering simplicity for great marketing capabilities, which I think it’s a great choice for businesses, where marketing brings a lot of revenue but not for solo developers or small teams building internal tools or simple applications.</p>
+
+<p>The pendulum is swinging back. Teams are rediscovering that most web apps don’t need universal rendering, edge functions, or 500KB of JavaScript. Sometimes a boring Rails app or a simple static site generator delivers more value with less drama.</p>
+
+<p>Choose Next.js when its complexity serves a clear business purpose. Otherwise, you’re buying a bulldozer to plant a garden.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Next.js is a popular web framework built on top of React that provides sophisticated features for building modern and global web applications. It offers server-side rendering, static site generation, API routes, incremental static regeneration, image optimization, and more.]]></summary></entry></feed>
