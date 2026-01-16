@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Emprender como ingeniero no es tan fácil"
+title:  "Los desafíos del emprendimiento para ingenieros"
 date:   2023-11-16 00:06:01 -0600
 categories: emprendimiento
 ---
