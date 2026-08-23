@@ -6,11 +6,11 @@ permalink: /about/
 
 ## Sobre Mí
 
-Soy Ingeniero en Robótica con más de 9 años de experiencia en desarrollo de software, apasionado por resolver desafíos técnicos en la intersección de física, software y hardware. A los 21 años, hice una pasantía en Google, lo que impulsó mi trayectoria emprendedora. A los 22, fundé [FuzzyFlags](https://fzf.dev), creciendo la empresa desde 2 cofundadores hasta un equipo de 10 profesionales.
+Soy Ingeniero en Robótica con más de 9 años de experiencia en desarrollo de software, apasionado por resolver desafíos técnicos en la intersección de física, software y hardware. A los 21 años, hice una pasantía en Google, lo que impulsó mi trayectoria emprendedora. A los 22, fundé [FZF](https://fzf.dev), creciendo la empresa desde 2 cofundadores hasta un equipo de 10 profesionales.
 
 Nos especializamos en desarrollo nearshore de software e infraestructura, sirviendo clientes en Canadá, Estados Unidos, México y Australia. Mi experiencia abarca Desarrollo Web, Sistemas Embebidos y Cloud Computing.
 
-A lo largo de mi trayectoria en FuzzyFlags, he gestionado desarrolladores, liderado múltiples proyectos internacionales, y ayudado a construir una plataforma para una startup que posteriormente obtuvo financiamiento semilla. Actualmente, estoy en transición de la gestión de vuelta a la ingeniería práctica, enfocándome en el sector de software para energía con la meta a largo plazo de impactar la industria de fusión nuclear en los próximos 10-20 años.
+A lo largo de mi trayectoria en FZF, he gestionado desarrolladores, liderado múltiples proyectos internacionales, y ayudado a construir una plataforma para una startup que posteriormente obtuvo financiamiento semilla. Actualmente, estoy en transición de la gestión de vuelta a la ingeniería práctica, enfocándome en el sector de software para energía con la meta a largo plazo de impactar la industria de fusión nuclear en los próximos 10-20 años.
 
 Me impulsa la curiosidad y el aprendizaje continuo, particularmente en cómo los principios de ciencias de la computación se aplican en diversos dominios como física y energía. También exploro las ventajas empresariales que la tecnología ofrece, educándome en liderazgo, gestión de productos, planeación estratégica y microeconomía.
 
@@ -31,7 +31,7 @@ En su momento mi psicóloga me sugirió que escribiera un libro. Me pareció mej
 
 ### Links
 
-Mi empresa: [FuzzyFlags](https://fzf.dev){:target="_blank"}
+Mi empresa: [FZF](https://fzf.dev){:target="_blank"}
 
 Canal de twitch donde hago LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
 

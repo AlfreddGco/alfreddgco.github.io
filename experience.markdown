@@ -22,7 +22,7 @@ Building and scaling the entrepreneurship center's platform from 1k to 20k users
 ---
 <br/>
 
-## FuzzyFlags
+## FZF
 **Technical Co-Founder** • Nov 2022 - Present
 
 Founded and bootstrapped a nearshore software and infrastructure development company from 2 co-founders to a team of 10 professionals. Serving clients across Canada, USA, Mexico, Australia, and Saudi Arabia.
