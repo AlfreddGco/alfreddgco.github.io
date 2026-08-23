@@ -2,11 +2,11 @@
 
 I'm a Robotics Engineer with over 9 years of software development experience, passionate about tackling technical challenges at the intersection of physics, software, and hardware. At 21, I interned at Google, which launched my entrepreneurial journey. By 22, I founded [FZF](https://fzf.dev), bootstrapping it from 2 co-founders to a team of 10 professionals.
 
-We specialize in nearshored software and infrastructure development, serving clients across Canada, USA, Mexico, and Australia. My expertise spans Web Development, Embedded Systems, and Cloud Computing.
+At FZF, we build Workflow Control for staffing operations: coordination systems that keep injury reporting, credentialing, onboarding, redeployment, and client compliance from getting lost between systems and people.
 
-Throughout my journey at FZF, I've managed developers, led multiple international projects, and helped build a platform for a startup that secured seed funding. Currently, I'm transitioning back from management to hands-on engineering, focusing on the software energy sector with a long-term goal of impacting the nuclear fusion industry within 10-20 years.
+Throughout my journey at FZF, I've managed developers, led multiple international projects, and helped build a platform for a startup that secured seed funding. I now focus on building reliable systems for staffing teams, working alongside the ATS, VMS, payroll platform, vendors, and client systems they already use.
 
-I'm driven by curiosity and continuous learning, particularly in how computer science principles apply across domains like physics and energy. I also explore the business advantages that technology provides, educating myself in leadership, product management, strategic planning, and microeconomics.
+I'm driven by curiosity and continuous learning, particularly in how computer science principles apply across domains like physics and biology. I also explore the business advantages that technology provides, educating myself in leadership, product management, strategic planning, and microeconomics.
 
 Outside of work, I enjoy rock climbing, chess, and language learning.
 

@@ -25,14 +25,14 @@ Building and scaling the entrepreneurship center's platform from 1k to 20k users
 ## FZF
 **Technical Co-Founder** • Nov 2022 - Present
 
-Founded and bootstrapped a nearshore software and infrastructure development company from 2 co-founders to a team of 10 professionals. Serving clients across Canada, USA, Mexico, Australia, and Saudi Arabia.
+Founded and bootstrapped FZF from 2 co-founders to a team of 10 professionals. FZF now builds Workflow Control for staffing operations, helping teams coordinate critical work across the systems and people involved.
 
 **Management & Operations:**
 - Hired and managed engineering team
 - Acquired and managed international clients
 - Optimized operations and evolved technical processes
 - Navigated complex Mexican regulatory environment
-- Currently pivoting to specialized software & infrastructure services for the energy sector
+- Focused FZF on Workflow Control for staffing operations, including credentialing, onboarding, redeployment, and client compliance
 
 **Notable Projects:**
 
