@@ -23,37 +23,25 @@ Building and scaling the entrepreneurship center's platform from 1k to 20k users
 <br/>
 
 ## FZF
-**Technical Co-Founder** • Nov 2022 - Present
+**Founder** • Nov 2022 - Present
 
-Founded and bootstrapped FZF from 2 co-founders to a team of 10 professionals. FZF now builds Workflow Control for staffing operations, helping teams coordinate critical work across the systems and people involved.
+Founded and bootstrapped FZF from two co-founders to a team of ten. After serving clients across several industries and countries, I focused the company on building operational systems for staffing firms in the U.S. and Canada.
 
-**Management & Operations:**
+**Current Focus:**
+- Mapping back-office processes to expose bottlenecks, fragile handoffs, and leverage points
+- Building integration systems across ATS, VMS, payroll, vendor, and client platforms
+- Applying AI to document-heavy and exception-heavy work that conventional automation cannot reliably reach
+- Coordinating critical workflows including injury reporting, credentialing, onboarding, redeployment, and client compliance
+
+**Leadership & Delivery:**
 - Hired and managed engineering team
 - Acquired and managed international clients
-- Optimized operations and evolved technical processes
+- Built reusable delivery systems and evolved technical processes
 - Navigated complex Mexican regulatory environment
-- Focused FZF on Workflow Control for staffing operations, including credentialing, onboarding, redeployment, and client compliance
 
-**Notable Projects:**
+Earlier FZF work included platform engineering, cloud infrastructure, workflow optimization, document intelligence, and products that helped clients secure seed funding.
 
-*Platform Development:*
-- Dancing platform for LA-based dance instructors
-- Training platform for runners in Mexico
-- Banking quote tool
-- Logistics platform with subscription-based storage
-
-*Enterprise Solutions:*
-- Project management platform with critical path computations
-- Workflow optimization platform for VC company
-- Document intelligence and analysis for biotech companies (US & Saudi Arabia)
-
-*AI & Innovation:*
-- Generative AI post generation tool for LinkedIn
-- Various ML and optimization solutions
-
-Built multiple platforms that helped clients secure seed funding from investors.
-
-**Technologies:** Full-stack development, cloud infrastructure, AI/ML, system optimization
+**Technologies:** Full-stack development, cloud infrastructure, integrations, AI/ML, system optimization
 
 ---
 <br/>
@@ -82,12 +70,16 @@ Developed new features for Google Assistant debugger on the Engineering Producti
 
 ## Technical Expertise
 
-**Languages:** TypeScript, Go, Zig, Python, C++
+**Languages:** TypeScript, Go, C, C++, Rust, Zig, Python
 
 **Infrastructure:** Kubernetes, Docker, CI/CD, Cloud Platforms (AWS/GCP/Azure)
 
 **AI/ML:** Generative AI, ML Pipelines, Recommendation Systems
 
+**Simulation & Control:** MuJoCo, Classical Control, Reinforcement Learning
+
 **Databases:** PostgreSQL, Database Optimization & Migrations
 
 **Architecture:** Monorepo, Microservices, Full-Stack Development
+
+**Current Technical Interests:** Physical AI, Robotics and Manipulation, Edge Inference, Embodied-Agent Runtimes
