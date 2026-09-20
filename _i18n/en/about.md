@@ -1,18 +1,22 @@
 ## About Me
 
-I'm a Robotics Engineer with over 9 years of software development experience, passionate about tackling technical challenges at the intersection of physics, software, and hardware. At 21, I interned at Google, which launched my entrepreneurial journey. By 22, I founded [FZF](https://fzf.dev), bootstrapping it from 2 co-founders to a team of 10 professionals.
+I design systems that turn information into coordinated action, whether the system is an organization or a machine.
 
-At FZF, we build Workflow Control for staffing operations: coordination systems that keep injury reporting, credentialing, onboarding, redeployment, and client compliance from getting lost between systems and people.
+My approach is **subtractive systems engineering**: understand how information, incentives, software, and real-world constraints interact; find the bottlenecks and leverage points; then remove friction until the system can observe, decide, and act reliably. Preserve the complexity reality requires. Remove the complexity it does not.
 
-Throughout my journey at FZF, I've managed developers, led multiple international projects, and helped build a platform for a startup that secured seed funding. I now focus on building reliable systems for staffing teams, working alongside the ATS, VMS, payroll platform, vendors, and client systems they already use.
+I interned at Google at 21 and founded [FZF](https://fzf.dev) the following year. I bootstrapped it from two co-founders to a team of ten, serving clients across several countries. Today, FZF is a specialist software company serving staffing firms across the U.S. and Canada.
 
-I'm driven by curiosity and continuous learning, particularly in how computer science principles apply across domains like physics and biology. I also explore the business advantages that technology provides, educating myself in leadership, product management, strategic planning, and microeconomics.
+Staffing back offices are complex human-in-the-loop systems. Critical work moves across recruiters, workers, clients, ATSs, VMSs, payroll platforms, documents, and inboxes. FZF maps those flows, finds where coordination breaks down, and builds the integration and intelligence layer that closes the loop.
+
+The same discipline draws me toward physical AI, where perception and control loops must run small, fast, and faithfully on real hardware. My background spans low-level systems, production software and cloud infrastructure, simulation, classical control, and reinforcement learning.
 
 Outside of work, I enjoy rock climbing, chess, and language learning.
 
 ### Links
 
 My company: [FZF](https://fzf.dev){:target="_blank"}
+
+GitHub: [https://github.com/AlfreddGco](https://github.com/AlfreddGco){:target="_blank"}
 
 Twitch channel where I do LiveCoding: [https://www.twitch.tv/edgecase41](https://www.twitch.tv/edgecase41){:target="_blank"}
 
