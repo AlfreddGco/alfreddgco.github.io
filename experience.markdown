@@ -27,6 +27,12 @@ Building and scaling the entrepreneurship center's platform from 1k to 20k users
 
 Founded and bootstrapped FZF from two co-founders to a team of ten. After serving clients across several industries and countries, I focused the company on building operational systems for staffing firms in the U.S. and Canada.
 
+**Role Evolution:**
+- **Business Development** (Nov 2025 - Present): Marketing, strategy, and business development
+- **Engineering Manager** (Nov 2024 - Nov 2025): Recruiting, team leadership, and budget management
+- **Lead Developer** (Nov 2023 - Nov 2024): Technical delivery, project management, and operations
+- **Software Developer** (Nov 2022 - Nov 2023): Hands-on development and primary market research
+
 **Current Focus:**
 - Mapping back-office processes to expose bottlenecks, fragile handoffs, and leverage points
 - Building integration systems across ATS, VMS, payroll, vendor, and client platforms
