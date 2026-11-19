@@ -1,38 +1,49 @@
-<footer class="site-footer h-card">
+<footer class="colophon h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
+    <div class="panel notched">
+      <div class="colophon-grid">
+        <div>
+          <p class="label">Contact</p>
+          <ul class="plain">
+            <li class="p-name">{{ site.author | default: site.title | escape }}</li>
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
+          </ul>
+        </div>
+
+        <div>
+          <p class="label">Links</p>
+          <ul class="plain">
+            {%- if site.github_username -%}
+            <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}">GitHub</a></li>
+            {%- endif -%}
+            <li><a href="https://fzf.dev">FZF</a></li>
+            <li><a href="https://www.toptal.com/developers/resume/alfredo-garcia#q2a9Dy">Toptal</a></li>
+            <li><a href="{{ "/feed.xml" | relative_url }}">RSS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="label">Note</p>
+          <p class="note">{% t global.description %}</p>
+        </div>
+      </div>
+
+      <div class="colophon-foot">
+        <span class="barcode" aria-hidden="true"></span>
+        <ul class="palette" aria-hidden="true">
+          <li style="--c:#111111"></li>
+          <li style="--c:#333333"></li>
+          <li style="--c:#777777"></li>
+          <li style="--c:#BEB8AD"></li>
+          <li style="--c:#E6E1D7"></li>
+          <li style="--c:#F4F1EE"></li>
         </ul>
+        <span class="label">&copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}</span>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{% t global.description %}</p>
-      </div>
-    </div>
-
-    <div style="margin-top: 24px; text-align: center;">
-      <a href="https://www.toptal.com/developers/resume/alfredo-garcia#q2a9Dy">Hire me on Toptal</a>
     </div>
   </div>
-
 </footer>

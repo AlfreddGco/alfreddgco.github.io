@@ -1,0 +1,57 @@
+<svg class="pencil" viewBox="0 0 160 500" role="img" aria-label="Line drawing of a transparent mechanical pencil">
+  <defs>
+    <clipPath id="grip-clip"><rect x="34" y="310" width="32" height="70"/></clipPath>
+    <pattern id="hatch-p" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><path d="M0 0 L0 6"/></pattern>
+  </defs>
+
+  <polygon class="shadow" points="80,64 120,86 120,404 58,470 66,382 80,216"/>
+
+  <g filter="url(#sketch)" class="lines">
+    <g class="pass">
+      <!-- eraser + collar -->
+      <path d="M41 14 Q41 8 50 8 Q59 8 59 14 L59 36 L41 36 Z"/>
+      <path d="M44 16 L56 28 M44 24 L52 32 M48 14 L56 22" class="thin"/>
+      <path d="M38 36 L62 36 L62 52 L38 52 Z"/>
+      <path d="M38 41 L62 41 M38 46 L62 46" class="thin"/>
+
+      <!-- clear barrel -->
+      <path d="M36 52 L36 312 M64 52 L64 312"/>
+      <path d="M39 52 L39 312" class="thin"/>
+
+      <!-- clip -->
+      <path d="M64 62 L78 58 L78 214 L64 220"/>
+      <path d="M64 62 L72 62 L72 206 L64 210" class="thin"/>
+
+      <!-- lead tube and spring -->
+      <path d="M46 52 L46 300 M54 52 L54 300" class="thin"/>
+      <path d="M46 96 L54 102 L46 108 L54 114 L46 120 L54 126 L46 132 L54 138 L46 144 L54 150 L46 156"/>
+
+      <!-- slider window -->
+      <rect x="40" y="180" width="20" height="46" class="fill"/>
+      <path d="M43 232 L57 232 M43 238 L57 238 M43 244 L57 244 M43 250 L57 250" class="thin"/>
+
+      <!-- grip with knurl -->
+      <path d="M34 312 L66 312 L66 382 L34 382 Z"/>
+      <g clip-path="url(#grip-clip)" class="thin">
+        <path d="M20 312 L82 374 M20 322 L82 384 M20 332 L72 384 M20 342 L62 384 M20 352 L52 384 M20 362 L42 384 M28 312 L82 366 M38 312 L82 356 M48 312 L82 346 M58 312 L82 336"/>
+        <path d="M82 312 L20 374 M82 322 L20 384 M82 332 L30 384 M82 342 L40 384 M82 352 L50 384 M82 362 L60 384 M74 312 L20 366 M64 312 L20 356 M54 312 L20 346 M44 312 L20 336"/>
+      </g>
+
+      <!-- cone and tip -->
+      <path d="M34 382 L66 382 L56 432 L44 432 Z"/>
+      <path d="M38 392 L62 392 M41 404 L59 404" class="thin"/>
+      <path d="M44 432 L48 466 L52 466 L56 432"/>
+      <path d="M50 466 L50 490" class="lead"/>
+    </g>
+  </g>
+
+  <!-- dimension line, drawing-sheet style -->
+  <g class="dim">
+    <path d="M100 432 L100 490 M96 432 L108 432 M96 490 L108 490"/>
+    <text x="106" y="465">&#216;0.3</text>
+  </g>
+  <g class="dim">
+    <path d="M10 52 L10 382 M6 52 L14 52 M6 382 L14 382"/>
+    <text x="0" y="0" transform="translate(24 230) rotate(-90)">190 MM</text>
+  </g>
+</svg>

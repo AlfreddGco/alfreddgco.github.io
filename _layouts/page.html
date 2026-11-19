@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="doc">
+  <p class="side-label" aria-hidden="true">{{ site.title | escape }} &mdash; {{ page.title | escape }}</p>
+
+  <header class="doc-header">
+    <p class="eyebrow"><i class="star" aria-hidden="true"></i> {{ site.title | escape }} / {{ page.title | escape }}</p>
+    <h1 class="doc-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

@@ -1,27 +1,33 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="doc post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <p class="side-label" aria-hidden="true">{{ site.title | escape }} &mdash; {{ page.date | date: "%Y" }}</p>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+  <header class="doc-header">
+    <p class="eyebrow post-meta">
+      <i class="star" aria-hidden="true"></i>
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+        / <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
+    <h1 class="doc-title post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {%- if page.description -%}
+    <p class="deck">{{ page.description | escape }}</p>
+    {%- endif -%}
   </header>
 
   {%- if page.wip -%}
-  <div class="wip-banner" style="background-color: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 12px 16px; margin-bottom: 24px; color: #856404;">
-    <strong>🚧 Work in Progress</strong> — This article is still being written and may change.
+  <div class="wip-banner">
+    <strong>Work in progress</strong> &mdash; This article is still being written and may change.
   </div>
   {%- endif -%}
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="prose post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 

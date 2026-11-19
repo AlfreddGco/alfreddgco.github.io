@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+  <section class="hero">
+    <p class="eyebrow"><i class="star" aria-hidden="true"></i> Systems &middot; Software &middot; Physical AI</p>
+    <h1 class="hero-title">{{ site.title | escape }}</h1>
+
+    <div class="hero-meta">
+      <span class="stamp">Subtractive systems engineering.</span>
+      <span class="label">{% t global.posts %} &rarr; {{ site.posts.size }}</span>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="prose lead-in">
+      {{ content }}
+
+      <ul class="pills" aria-label="Keywords">
+        <li>Staffing ops</li>
+        <li>Integrations</li>
+        <li>Robotics</li>
+        <li>Edge inference</li>
+        <li>Control</li>
+      </ul>
+    </div>
+
+    <figure class="figure notched">
+      {%- include pencil.html -%}
+      <figcaption class="label">Fig. 01 &mdash; Remove until it works</figcaption>
+    </figure>
+  </section>
+
+  {%- if site.posts.size > 0 -%}
+  <section class="posts" aria-labelledby="posts-heading">
+    <h2 id="posts-heading" class="section-title">{% t global.posts %}</h2>
+    <ol class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        <a class="post-row" href="{{ post.url | relative_url }}">
+          <span class="post-no">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <span class="post-name">{{ post.title | escape }}</span>
+          <span class="post-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </section>
+  {%- endif -%}
+</div>
